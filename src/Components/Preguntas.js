@@ -13,10 +13,11 @@ useEffect(()=>{
     
 },[])
 
-const obtenerDatos = async()=>{
+const obtenerDatos = async () => {
     const data =await fetch('https://opentdb.com/api.php?amount=5&category=21&difficulty=easy&type=multiple')
-    const users = await data.json()
-    setPreguntas(users)
+    const users = await data.json().then((datos)=>setPreguntas(datos.results))
+    console.log(preguntas);
+    console.log(users);
 }
 
 
@@ -29,10 +30,11 @@ const obtenerDatos = async()=>{
             <ul>
                 {
                    preguntas.map(item  =>(
-                       <li key="item.id">{item.category}-{item.question}</li>
+                       <li key='{item.category}'>{item.category}-{item.question}</li>
                    ))
                 }
             </ul>
+           
     </div>
     );
 };

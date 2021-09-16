@@ -7,7 +7,7 @@ function App() {
     <div className="imagenfondo">
       
       <AppRouter/>
-      
+      <Preguntas/>
       
     </div>
   );
