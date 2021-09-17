@@ -2,19 +2,21 @@ import React from 'react';
 import Preguntas from '../Components/Preguntas';
 
 
+const contador = () =>{
+  const cont = 0
+  console.log(cont++);
+}
 
 const Pregunta1 = () => {
     return (
         <div>
+          
             <div>
               
-                <h1>Pregunta 1</h1>
+                <h1>Preguntas</h1>
+                <Preguntas/>
             </div>
-            <ul>
-              {
-                
-              }
-            </ul>
+            
 
 
 
@@ -43,7 +45,10 @@ const Pregunta1 = () => {
           </li>
         </ul>
       </nav>
+
+      <h1>Puntaje:{contador}</h1>
         </div>
+        
     );
 };
 

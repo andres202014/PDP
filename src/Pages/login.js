@@ -43,7 +43,7 @@ const login = () => {
               placeholder="Password"/>
             </div>
             <a 
-            type="submit" 
+             
             class="btn btn-primary"
             href="Jugar">Loguearse
             </a>
