@@ -3,30 +3,26 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
     return (
-        <div>
-            <nav>
-                <ul>
-                    <li>
-                        <NavLink exact to= "/" 
-                        activeClassName="active">Home</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to= "/login"
-                        activeClassName="active">login</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to= "/Acerca-del-juego"
-                        activeClassName="active">Info juego</NavLink>
-                    </li>
-                    <li>
-                        <NavLink to= "/Jugar"
-                        activeClassName="active">Jugar</NavLink>
-                    </li>
-                    
-                </ul>
-            </nav>
-            
-        </div>
+        
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+  <a className="navbar-brand" href="/">Home</a>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+  <div className="collapse navbar-collapse" id="navbarNav">
+    <ul className="navbar-nav">
+      <li className="nav-item active">
+        <a className="nav-link" href="/login">Login</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="/jugar">jugar</a>
+      </li>
+      <li className="nav-item">
+        <a className="nav-link" href="/acerca-del-juego">Info</a>
+      </li>
+    </ul>
+  </div>
+</nav>
     );
 };
 

@@ -2,10 +2,7 @@ import React from 'react';
 import Preguntas from '../Components/Preguntas';
 
 
-const contador = () =>{
-  const cont = 0
-  console.log(cont++);
-}
+
 
 const Pregunta1 = () => {
     return (
@@ -37,16 +34,16 @@ const Pregunta1 = () => {
           </li>
           <li class="page-item"><a class="page-link" href="Pregunta1">1</a></li>
           <li class="page-item">
-            <a class="page-link" href="Pregunta2">2</a>
+            <a class="page-link" href="#">2</a>
           </li>
           <li class="page-item"><a class="page-link" href="Pregunta3">3</a></li>
           <li class="page-item">
-            <a class="page-link" href="Pregunta2">Next</a>
+            <a class="page-link" href="#">Next</a>
           </li>
         </ul>
       </nav>
 
-      <h1>Puntaje:{contador}</h1>
+      
         </div>
         
     );
